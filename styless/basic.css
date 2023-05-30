@@ -58,11 +58,31 @@
     padding: 18px 15px 15px 15px;
     font-size: 100%;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+.menu a::after{
+    content: "";
+    background-color: brown/*#D90D32*/;
+    position: absolute; 
+    top: 60%;
+    width: 8%;
+    height: 3px;
+
+    opacity: 0;
+}
+
+/*.menu a.select1::after,*/
+.menu a:hover::after{
+    cursor: pointer;
+    opacity: 0.8;
 }
 
 .open-menu-btn, .close-menu-btn{
     display: none;
 }
+
+
 /*
 @media(max-width:950px){
 
